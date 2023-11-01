@@ -1,0 +1,151 @@
+/* General setup */
+
+@font-face {
+  font-family: 'afta_serifregular';
+  src: url('Fonts/aftaserifthin-regular-webfont.woff2') format('woff2'),
+       url('Fonts/aftaserifthin-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'alegreyaregular';
+  src: url('Fonts/aftaserifthin-regular-webfont.woff2') format('woff2'),
+       url('Fonts/aftaserifthin-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* css for text*/
+header{
+  text-align: center;
+  font-size: 2.7rem;
+}
+h1{
+  font-family: 'alegreyaregular', sans-serif;
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+body{
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-indent: 20px;
+}
+footer{
+  font-size: 1.7rem;
+} 
+
+nav {
+  font-size: 1.7rem;
+}
+body, header,footer,h1,h2 {
+  font-family: 'afta_serifregular', sans-serif;
+  letter-spacing: 1px;
+}
+
+/*css for links */
+
+a {
+  text-decoration:underline;
+}
+
+a:visited {
+  color: #aa6666;
+  text-decoration-color: #a66;
+}
+
+a:focus {
+  color: lightblue;
+  outline: none;
+}
+
+a:hover {
+  color: wheat;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:active{
+  box-shadow: 2px 2px 5px #fc894d;
+}
+
+a[href^="http"] {
+  background: url("external-link-52.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+/*CSS lists */
+
+li,ol,ul {
+  line-height: 1.5;
+  margin: 0.5;
+}
+
+ul, ol {
+  list-style-type: square;
+}
+
+/*nav bar*/
+
+nav ul{
+  height: 200px;
+  padding: 10px;
+  color: chocolate;
+}

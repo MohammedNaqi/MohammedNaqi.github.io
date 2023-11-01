@@ -1,0 +1,27 @@
+html {
+  font-family: sans-serif;
+  font-size: 1rem;
+  /*A conversion tool on the internet */
+  color: #fff;
+}
+
+/* Your CSS below here */
+div {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color:#3498db;
+  /* found this colour by pressing inspect on the example*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px #2977a3;
+  border-radius: 10px;
+  padding: 1%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+box-shadow:
+    inset 4px 4px 6px rgba(0, 0, 0, 0.1),
+    inset -4px -4px 6px rgba(255, 255, 255, 0.1);  
+}
