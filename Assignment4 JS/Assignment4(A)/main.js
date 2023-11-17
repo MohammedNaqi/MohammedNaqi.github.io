@@ -28,10 +28,12 @@ function result() {
 
   }
 
-  story.textContent = ;
+  story.textContent =;
   story.style.visibility = 'visible';
 
   let newStory = storyText;
 
-  let xItem 
+  let xItem = randomValueFromArray(insertx);
+  let yItem = randomValueFromArray(inserty);
+  let zitem = randomValueFromArray(insertz);
 }
