@@ -25,15 +25,18 @@ function result() {
   if(document.getElementById("uk").checked) {
     const weight = Math.round(300);
     const temperature =  Math.round(94);
-
   }
 
   story.textContent =;
   story.style.visibility = 'visible';
 
-  let newStory = storyText;
-
   let xItem = randomValueFromArray(insertx);
   let yItem = randomValueFromArray(inserty);
   let zitem = randomValueFromArray(insertz);
+
+  newStory = newStory.replace(":insertx:", randomValueFromArray(insertx));
+  newStory = newStory.replace(":inserty:", randomValueFromArray(inserty));
+  newStory = newStory.replace(":insertz:", randomValueFromArray(insertz));
+
+  let newStory = storyText;
 }
