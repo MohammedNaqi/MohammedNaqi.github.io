@@ -19,16 +19,19 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
-
+    newStory = newStory.replace("Bob", customName);
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
+    const weight = Math.round(300 / 14) + 'Stone';
+    const temperature =  Math.round(94 - 32 * 5/9) + centigrade;
+ 
   }
 
-  story.textContent =;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
+
+  let newStory = storyText;
 
   let xItem = randomValueFromArray(insertx);
   let yItem = randomValueFromArray(inserty);
@@ -37,6 +40,4 @@ function result() {
   newStory = newStory.replace(":insertx:", randomValueFromArray(insertx));
   newStory = newStory.replace(":inserty:", randomValueFromArray(inserty));
   newStory = newStory.replace(":insertz:", randomValueFromArray(insertz));
-
-  let newStory = storyText;
 }
