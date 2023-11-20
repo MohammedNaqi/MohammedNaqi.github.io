@@ -17,14 +17,24 @@ randomize.addEventListener('click', result);
 
 function result() {
 
+  let newStory = storyText;
+
+  let xItem = randomValueFromArray(insertx);
+  let yItem = randomValueFromArray(inserty);
+  let zitem = randomValueFromArray(insertz);
+
+  newStory = newStory.replaceAll(":insertx:", randomValueFromArray(insertx));
+  newStory = newStory.replace(":inserty:", randomValueFromArray(inserty));
+  newStory = newStory.replace(":insertz:", randomValueFromArray(insertz));
+
   if(customName.value !== '') {
     const name = customName.value;
     newStory = newStory.replace("Bob", customName);
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300 / 14) + 'Stone';
-    const temperature =  Math.round(94 - 32 * 5/9) + centigrade;
+    const weight = Math.round(300 / 14) + ' Stone';
+    const temperature =  Math.round(94 - 32 * 5/9) + ' centigrade';
     newStory = newStory.replace("94 fahrenheit", temperature)
     newStory = newStory.replace("300 pounds", weight)
   }
@@ -32,13 +42,13 @@ function result() {
   story.textContent = newStory;
   story.style.visibility = 'visible';
 
-  let newStory = storyText;
+  // let newStory = storyText;
 
-  let xItem = randomValueFromArray(insertx);
-  let yItem = randomValueFromArray(inserty);
-  let zitem = randomValueFromArray(insertz);
+  // let xItem = randomValueFromArray(insertx);
+  // let yItem = randomValueFromArray(inserty);
+  // let zitem = randomValueFromArray(insertz);
 
-  newStory = newStory.replace(":insertx:", randomValueFromArray(insertx));
-  newStory = newStory.replace(":inserty:", randomValueFromArray(inserty));
-  newStory = newStory.replace(":insertz:", randomValueFromArray(insertz));
+  // newStory = newStory.replace(":insertx:", randomValueFromArray(insertx));
+  // newStory = newStory.replace(":inserty:", randomValueFromArray(inserty));
+  // newStory = newStory.replace(":insertz:", randomValueFromArray(insertz));
 }
