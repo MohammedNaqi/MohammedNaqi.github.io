@@ -28,23 +28,18 @@ for (const image of imagesArray) {
         displayedImage.alt = e.target.alt;
 })};
 
-// Adding a click event listener to each thumbnail image
-
-
-// function button (newImage, altText){
-//     newImage.setAttribute('src', newImage.scr);
-//     newImage.setAttribute('alt', altText);
-// }
-
 /* Wiring up the Darken/Lighten button */
 
-// const btnClass = btn.getAttribute('class')
+btn.addEventListener('click', () => {
+    const btnClass = btn.getAttribute('class');
+    if (btnClass === "dark") {
+        btn.setAttribute = ('class', 'light');
+        btn.textContent = "lighten";
+        overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+}   else if (btnClass === "light"){
+    btn.setAttribute('class', 'dark');
+    btn.textContent = 'Darken';
+    overlay.style.backgroundColor = 'rgba(0,0,0,0)';
+}
+})
 
-// function dark 
-// if (btnClass === "dark") {
-//     btn.setAttribute = 
-// }
-
-// btn.setAttribute("class", xxx);
-// btn.textContent = xxx;
-// overlay.style.backgroundColor = xxx;
