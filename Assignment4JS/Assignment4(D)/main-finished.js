@@ -6,6 +6,7 @@ const ctx = canvas.getContext('2d');
 const width = canvas.width = window.innerWidth;
 const height = canvas.height = window.innerHeight;
 
+let count = 0
 // function to generate random number
 
 function random(min, max) {
@@ -110,13 +111,15 @@ class Evilcircle {
 
    collisionDetect() {
       for (const ball of balls) {
-        if (!(this === ball) && ball.exists) {
+        if (ball.exists) {
           const dx = this.x - ball.x;
           const dy = this.y - ball.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
     
           if (distance < this.size + ball.size) {
-            ball.color = this.color = randomRGB();
+            ball.exists = false;
+            count--;
+            para.TextContent = 'Ball count' + count;
           }
         }
       }
