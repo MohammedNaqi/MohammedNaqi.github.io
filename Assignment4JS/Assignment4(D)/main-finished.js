@@ -80,7 +80,7 @@ class Ball extends Shape {
       }
    }
 }
-class Evilcircle {
+class Evilcircle extends Shape{
    constructor(x,y){
       super(x, y, 20, 20);
 
@@ -179,6 +179,9 @@ function loop() {
      ball.collisionDetect();
    }
 
+   Evilblob.draw();
+   Evilblob.checkBounds();
+   Evilblob.collisionDetect();
    requestAnimationFrame(loop);
 }
 
