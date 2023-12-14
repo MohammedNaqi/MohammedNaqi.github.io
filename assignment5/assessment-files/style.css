@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #dde;
+  background-color: wheat;
 }
 
 body {
@@ -52,7 +52,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: lightgoldenrodyellow;
 }
 
 article, footer, .secondary {
@@ -139,7 +139,7 @@ footer {
 
 table {
   width: 100%;
-  background-color: #dde;
+  background-color:wheat;
   border-collapse: collapse;
 }
 
@@ -155,9 +155,7 @@ th[scope="col"] {
   border-bottom: 1px solid black;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #def;
-}
+/* tbody tr:nth-child(odd) {} */
 
 /* styling content images and audio */
 
@@ -173,7 +171,7 @@ audio {
 /* Comments styling */
 
 .comments {
-  background-color: #def;
+  background-color: wheat;
   padding: 10px;
 }
 
